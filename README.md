@@ -60,10 +60,19 @@
 
 ## 📊 GitHub Stats
 
+<!-- LINE GRAPH -->
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=userMarcPaul&show_icons=true&theme=dark"/>
-  <br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=marcxdev&layout=compact&theme=dark"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=userMarcPaul&theme=react-dark" />
+</p>
+
+<!-- PIE / LANGUAGE -->
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=userMarcPaul&theme=dark" />
+</p>
+
+<!-- FULL METRICS -->
+<p align="center">
+  <img src="https://metrics.lecoq.io/userMarcPaul?template=classic&config.timezone=Asia%2FManila" />
 </p>
 
 ---
