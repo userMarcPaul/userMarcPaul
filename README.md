@@ -61,7 +61,7 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=marcxdev&show_icons=true&theme=dark"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=userMarcPaul&show_icons=true&theme=dark"/>
   <br/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=marcxdev&layout=compact&theme=dark"/>
 </p>
