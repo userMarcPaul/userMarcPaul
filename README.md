@@ -1,27 +1,29 @@
+<!-- MATRIX RAIN ANIMATION HEADER -->
+<div align="center">
+
+<img src="https://readme-typing-svg.herokuapp.com?color=00FF00&size=28&center=true&vCenter=true&width=700&lines=Wake+Up+MarcxDev...;Follow+the+Code...;There+is+No+Bug...;Only+Feature..." />
+
+</div>
+
+<!-- OPTIONAL MATRIX GIF (fallback for GitHub preview) -->
+<p align="center">
+  <img src="https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif" width="100%" />
+</p>
+
 <h1 align="center">Hi 👋, I'm marcxdev</h1>
 <h3 align="center">Just a Developer</h3>
-
-<!-- MATRIX ANIMATION -->
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=00FF00&size=22&center=true&vCenter=true&width=600&lines=Initializing+Developer...;Loading+Skills...;Welcome+to+my+Matrix...;Code.+Debug.+Repeat." />
-</p>
-
-<!-- MATRIX GIF -->
-<p align="center">
-  <img src="https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif" width="500"/>
-</p>
 
 ---
 
 ## 🚀 About Me
 
 - 🌱 Currently learning **MERN Stack**
-- 💬 Ask me about **Nothing (yet 😅)**
+- 💬 Ask me about **Nothing (but I’ll still answer 😆)**
 - ⚡ Fun fact: **Dev dev lang**
 
 ---
 
-## 🛠️ Tech Stack
+## 🧠 Tech Stack
 
 ### 💻 Programming Languages
 <p>
@@ -58,8 +60,8 @@
 ### 📱 Mobile Development
 <p>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg" width="40"/>
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg" width="40"/>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg" width="40"/>
 </p>
 
 ---
@@ -77,20 +79,28 @@
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=marcxdev&show_icons=true&theme=dark" />
-</p>
-
-<p align="center">
+  <br/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=marcxdev&layout=compact&theme=dark" />
 </p>
 
 ---
 
-## 🧠 Philosophy
+## 🧬 Matrix Mode (Pure HTML Animation)
+
+> ⚠️ GitHub README does NOT support JavaScript, so this is a CSS-style illusion.
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,100:00FF00&height=200&section=header&text=010101010101010101010101&fontColor=00FF00&fontSize=20&animation=twinkling"/>
+</p>
+
+---
+
+## 🧩 Quote
 
 ```bash
-while(alive) {
-    code();
-    debug();
-    learn();
-    repeat();
+while(alive){
+   eat();
+   sleep();
+   code();
+   repeat();
 }
