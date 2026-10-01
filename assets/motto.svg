@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="210" viewBox="0 0 520 210" role="img" aria-label="Motto">
+<title>Motto</title>
+<style>
+  text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+  .title { fill: #c084fc; font-size: 18px; font-weight: 600; }
+  .rain { fill: #2a2140; opacity: 0.6; font-size: 13px; animation: fall linear infinite; }
+  @keyframes fall { to { transform: translateY(610px); } }
+  .fade { opacity: 0; animation: fadein 0.4s ease-out forwards; }
+  @keyframes fadein { to { opacity: 1; } }
+  .file { fill: #a1a1b5; font-size: 12.5px; }
+  .ln { fill: #4b4b63; font-family: 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace; font-size: 15px; }
+  .code { font-family: 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace; font-size: 16px; }
+  .caret { fill: #a855f7; animation: blink 1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) {
+    .rain { display: none; }
+    * { animation: none !important; opacity: 1 !important; }
+  }
+</style>
+<clipPath id="card-520x210"><rect width="520" height="210" rx="4.5"/></clipPath>
+<g clip-path="url(#card-520x210)">
+<rect width="520" height="210" fill="#0d1117"/>
+
+<rect x="0.5" y="0.5" width="519" height="209" rx="10" fill="none" stroke="#2a2140"/>
+<rect x="1" y="1" width="518" height="34" rx="9" fill="#161b22"/>
+<rect x="1" y="26" width="518" height="9" fill="#161b22"/>
+<line x1="1" y1="35" x2="519" y2="35" stroke="#2a2140"/>
+<circle cx="22" cy="18" r="5.5" fill="#ff5f57"/><circle cx="40" cy="18" r="5.5" fill="#febc2e"/><circle cx="58" cy="18" r="5.5" fill="#28c840"/>
+<text x="260.0" y="22" class="file" text-anchor="middle">motto.js</text>
+<text x="34" y="72" class="ln" text-anchor="end">1</text><text x="52" y="72" class="code" xml:space="preserve"><tspan fill="#f472b6">while</tspan><tspan fill="#a1a1b5"> (</tspan><tspan fill="#ffffff">alive</tspan><tspan fill="#a1a1b5">) {</tspan></text><text x="34" y="98" class="ln" text-anchor="end">2</text><text x="52" y="98" class="code" xml:space="preserve"><tspan fill="#a1a1b5">  </tspan><tspan fill="#c084fc">code</tspan><tspan fill="#a1a1b5">();</tspan></text><text x="34" y="124" class="ln" text-anchor="end">3</text><text x="52" y="124" class="code" xml:space="preserve"><tspan fill="#a1a1b5">  </tspan><tspan fill="#c084fc">learn</tspan><tspan fill="#a1a1b5">();</tspan></text><text x="34" y="150" class="ln" text-anchor="end">4</text><text x="52" y="150" class="code" xml:space="preserve"><tspan fill="#a1a1b5">  </tspan><tspan fill="#c084fc">repeat</tspan><tspan fill="#a1a1b5">();</tspan></text><text x="34" y="176" class="ln" text-anchor="end">5</text><text x="52" y="176" class="code" xml:space="preserve"><tspan fill="#a1a1b5">}</tspan></text>
+<rect x="66" y="161" width="9" height="19" class="caret"/>
+</g>
+</svg>
