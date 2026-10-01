@@ -6,6 +6,9 @@ Outputs (in assets/):
   langs.svg     most used languages
   streak.svg    total contributions, current streak, longest streak
   activity.svg  contribution line graph (last 31 days)
+  header.svg    animated intro header
+  tech.svg      tech stack
+  motto.svg     motto as a code window
 
 Env vars:
   GH_TOKEN  GitHub token (the workflow passes this in)
@@ -431,13 +434,220 @@ def activity_svg(d):
     return frame(W, H, f"Contributions in the last 31 days for {d['login']}", body, css)
 
 
+# ---------------------------------------------------------------- profile content
+# Edit these to change what the header, tech stack and motto show.
+
+NAME = "marcxdev"
+TAGLINES = ["Just a developer", "Learning the MERN stack", "Building apps with Flutter"]
+
+DEVICON = "https://raw.githubusercontent.com/devicons/devicon/master/icons"
+# (name shown, devicon file, True if the logo is dark and should be drawn light)
+TECH = [
+    ("Languages", [
+        ("Java", "java/java-original", False),
+        ("JavaScript", "javascript/javascript-original", False),
+        ("TypeScript", "typescript/typescript-original", False),
+        ("Python", "python/python-original", False),
+        ("Ruby", "ruby/ruby-original", False),
+        ("C", "c/c-original", False),
+        ("C++", "cplusplus/cplusplus-original", False),
+        ("C#", "csharp/csharp-original", False),
+    ]),
+    ("Frontend", [
+        ("HTML", "html5/html5-original", False),
+        ("CSS", "css3/css3-original", False),
+        ("React", "react/react-original", False),
+    ]),
+    ("Backend", [
+        ("Node.js", "nodejs/nodejs-original", False),
+        ("Express", "express/express-original", True),
+        ("Django", "django/django-plain", True),
+        ("Rails", "rails/rails-plain", False),
+    ]),
+    ("Mobile", [
+        ("Flutter", "flutter/flutter-original", False),
+        ("Dart", "dart/dart-original", False),
+    ]),
+    ("Databases", [
+        ("PostgreSQL", "postgresql/postgresql-original", False),
+        ("MySQL", "mysql/mysql-original", False),
+        ("MongoDB", "mongodb/mongodb-original", False),
+    ]),
+]
+
+MOTTO = [
+    [("kw", "while"), ("p", " ("), ("v", "alive"), ("p", ") {")],
+    [("p", "  "), ("fn", "code"), ("p", "();")],
+    [("p", "  "), ("fn", "learn"), ("p", "();")],
+    [("p", "  "), ("fn", "repeat"), ("p", "();")],
+    [("p", "}")],
+]
+
+MONO = "'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace"
+ICON_OVERRIDE = {}  # used by the local preview only
+
+
+def icon_data_uri(path, offline):
+    """Logos are embedded in the SVG itself, because an SVG shown as an image can't load other files."""
+    import base64
+    if path in ICON_OVERRIDE:
+        return ICON_OVERRIDE[path]
+    if offline:
+        return None
+    try:
+        with urllib.request.urlopen(f"{DEVICON}/{path}.svg", timeout=20) as r:
+            raw = r.read()
+        return "data:image/svg+xml;base64," + base64.b64encode(raw).decode()
+    except Exception as e:
+        print(f"  could not load {path}: {e}")
+        return None
+
+
+def hero_svg():
+    W, H = 850, 210
+    acc, acc2 = T["ring"], T["fire"]
+    n = len(TAGLINES)
+    slot = 3.2
+    cycle = slot * n
+    cw = 11.4  # monospace char width at 19px
+    lines = []
+    for i, t in enumerate(TAGLINES):
+        w = len(t) * cw
+        d = i * slot
+        left = W / 2 - (w + 26) / 2 + 26
+        lines.append(
+            f'<g class="tag" style="animation-delay:{d:.1f}s" transform="translate({left:.1f},166)">'
+            f'<text x="-26" y="0" class="prompt">&gt;</text>'
+            f'<clipPath id="type{i}"><rect x="0" y="-22" width="{w + 2:.0f}" height="30" class="typer" style="animation-delay:{d:.1f}s;animation-timing-function:steps({len(t)})"/></clipPath>'
+            f'<text class="typed" clip-path="url(#type{i})" textLength="{w:.1f}" lengthAdjust="spacing">{escape(t)}</text>'
+            f'<rect x="0" y="-16" width="10" height="20" class="caret" style="--w:{w + 4:.0f}px;animation-delay:{d:.1f}s, 0s;animation-timing-function:steps({len(t)}), steps(1)"/></g>')
+    a = 100 / n
+    css = f'''.hi {{ fill: {T["muted"]}; font-size: 18px; }}
+  .name {{ font-size: 52px; font-weight: 800; letter-spacing: -1px; }}
+  .prompt {{ fill: {acc}; font-family: {MONO}; font-size: 19px; font-weight: 700; }}
+  .typed {{ fill: {T["text"]}; font-family: {MONO}; font-size: 19px; }}
+  .tag {{ opacity: 0; animation: slotvis {cycle:.1f}s infinite; }}
+  @keyframes slotvis {{ 0% {{ opacity: 1; }} {a * 0.97:.2f}% {{ opacity: 1; }} {a:.2f}%, 100% {{ opacity: 0; }} }}
+  .typer {{ transform: scaleX(0); animation: type {cycle:.1f}s steps(24) infinite; }}
+  @keyframes type {{ 0% {{ transform: scaleX(0); }} {a * 0.42:.2f}%, 100% {{ transform: scaleX(1); }} }}
+  .caret {{ fill: {acc}; opacity: 0.85; animation: move {cycle:.1f}s steps(24) infinite, blink 0.9s steps(1) infinite; }}
+  @keyframes move {{ 0% {{ transform: translateX(0); }} {a * 0.42:.2f}%, 100% {{ transform: translateX(var(--w)); }} }}
+  @keyframes blink {{ 50% {{ fill-opacity: 0; }} }}
+  .glow {{ animation: drift 10s ease-in-out infinite alternate; }}
+  @keyframes drift {{ to {{ transform: translateX(90px); }} }}
+  @media (prefers-reduced-motion: reduce) {{
+    .tag:first-of-type {{ opacity: 1 !important; }}
+    .tag:not(:first-of-type) {{ display: none; }}
+    .typer {{ transform: none; }}
+  }}'''
+    body = f'''<defs>
+  <radialGradient id="g1" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="{acc}" stop-opacity="0.28"/><stop offset="1" stop-color="{acc}" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="g2" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="{acc2}" stop-opacity="0.16"/><stop offset="1" stop-color="{acc2}" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="namefill" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="{T["title"]}"/><stop offset="1" stop-color="{acc2}"/>
+  </linearGradient>
+</defs>
+<ellipse cx="330" cy="105" rx="300" ry="100" fill="url(#g1)" class="glow"/>
+<ellipse cx="560" cy="115" rx="240" ry="90" fill="url(#g2)"/>
+<text x="{W / 2}" y="62" class="hi" text-anchor="middle">Hi, I'm</text>
+<text x="{W / 2}" y="118" class="name" text-anchor="middle" fill="url(#namefill)">{escape(NAME)}</text>
+{"".join(lines)}'''
+    return frame(W, H, f"Hi, I'm {NAME}", body, css)
+
+
+TECH_ROWS = [["Languages"], ["Frontend", "Backend"], ["Mobile", "Databases"]]
+
+
+def tech_svg(offline=False):
+    W = 850
+    slot, tile = 80, 56
+    gap = 72
+    row_h = 132
+    top = 24
+    groups = dict(TECH)
+    H = top + row_h * len(TECH_ROWS) - 4
+    body = ['<filter id="light"><feColorMatrix type="matrix" values="0 0 0 0 0.92  0 0 0 0 0.9  0 0 0 0 0.97  0 0 0 1 0"/></filter>']
+    k = 0
+    for r, names in enumerate(TECH_ROWS):
+        y = top + r * row_h
+        widths = [len(groups[n]) * slot for n in names]
+        x = (W - (sum(widths) + gap * (len(names) - 1))) / 2
+        for gi, name in enumerate(names):
+            items = groups[name]
+            gx = x
+            if gi:
+                body.append(f'<line x1="{gx - gap / 2:.1f}" y1="{y + 4}" x2="{gx - gap / 2:.1f}" y2="{y + 108}" class="sep"/>')
+            body.append(f'<text x="{gx + (slot - tile) / 2:.1f}" y="{y + 14}" class="group">{escape(name)}'
+                        f'<tspan class="count" dx="8">{len(items)}</tspan></text>')
+            for j, (tname, path, light) in enumerate(items):
+                tx = gx + j * slot + (slot - tile) / 2
+                ty = y + 28
+                uri = icon_data_uri(path, offline)
+                if uri:
+                    filt = ' filter="url(#light)"' if light else ""
+                    img = f'<image x="{tx + 12:.1f}" y="{ty + 12}" width="32" height="32" href="{uri}" xlink:href="{uri}"{filt}/>'
+                else:
+                    img = f'<text x="{tx + tile / 2:.1f}" y="{ty + 34}" class="init" text-anchor="middle">{escape(tname[:2])}</text>'
+                body.append(
+                    f'<g class="fade" style="animation-delay:{0.05 + k * 0.03:.2f}s">'
+                    f'<rect x="{tx:.1f}" y="{ty}" width="{tile}" height="{tile}" rx="14" class="tile"/>{img}'
+                    f'<text x="{tx + tile / 2:.1f}" y="{ty + tile + 18}" class="tname" text-anchor="middle">{escape(tname)}</text></g>')
+                k += 1
+            x += widths[gi] + gap
+    css = f'''.group {{ fill: {T["title"]}; font-size: 15px; font-weight: 700; }}
+  .count {{ fill: {T["muted"]}; font-size: 12px; font-weight: 400; }}
+  .tile {{ fill: #161b22; stroke: {T["grid"]}; stroke-width: 1; }}
+  .tname {{ fill: #c9c9d9; font-size: 11.5px; }}
+  .init {{ fill: {T["title"]}; font-size: 16px; font-weight: 700; }}
+  .sep {{ stroke: {T["grid"]}; stroke-width: 1; }}'''
+    svg = frame(W, H, "Tech stack", "\n".join(body), css)
+    return svg.replace('xmlns="http://www.w3.org/2000/svg"',
+                       'xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"', 1)
+
+
+def motto_svg():
+    W = 520
+    lh = 26
+    H = 58 + lh * len(MOTTO) + 22
+    colors = {"kw": T["fire"], "fn": T["title"], "v": T["text"], "p": T["muted"]}
+    rows = []
+    for i, line in enumerate(MOTTO):
+        y = 72 + i * lh
+        spans = "".join(f'<tspan fill="{colors[c]}">{escape(t)}</tspan>' for c, t in line)
+        rows.append(f'<text x="34" y="{y}" class="ln" text-anchor="end">{i + 1}</text>'
+                    f'<text x="52" y="{y}" class="code" xml:space="preserve">{spans}</text>')
+    last_y = 72 + (len(MOTTO) - 1) * lh
+    body = f'''<rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="10" fill="none" stroke="{T["grid"]}"/>
+<rect x="1" y="1" width="{W - 2}" height="34" rx="9" fill="#161b22"/>
+<rect x="1" y="26" width="{W - 2}" height="9" fill="#161b22"/>
+<line x1="1" y1="35" x2="{W - 1}" y2="35" stroke="{T["grid"]}"/>
+<circle cx="22" cy="18" r="5.5" fill="#ff5f57"/><circle cx="40" cy="18" r="5.5" fill="#febc2e"/><circle cx="58" cy="18" r="5.5" fill="#28c840"/>
+<text x="{W / 2}" y="22" class="file" text-anchor="middle">motto.js</text>
+{"".join(rows)}
+<rect x="66" y="{last_y - 15}" width="9" height="19" class="caret"/>'''
+    css = f'''.file {{ fill: {T["muted"]}; font-size: 12.5px; }}
+  .ln {{ fill: #4b4b63; font-family: {MONO}; font-size: 15px; }}
+  .code {{ font-family: {MONO}; font-size: 16px; }}
+  .caret {{ fill: {T["ring"]}; animation: blink 1s steps(1) infinite; }}
+  @keyframes blink {{ 50% {{ opacity: 0; }} }}'''
+    return frame(W, H, "Motto", body, css)
+
+
 def main():
-    data = demo() if "--demo" in sys.argv else fetch()
+    offline = "--demo" in sys.argv
+    data = demo() if offline else fetch()
     os.makedirs(OUT, exist_ok=True)
-    for name, fn in [("stats", stats_svg), ("langs", langs_svg), ("streak", streak_svg), ("activity", activity_svg)]:
+    cards = [("stats", lambda: stats_svg(data)), ("langs", lambda: langs_svg(data)),
+             ("streak", lambda: streak_svg(data)), ("activity", lambda: activity_svg(data)),
+             ("header", hero_svg), ("tech", lambda: tech_svg(offline)), ("motto", motto_svg)]
+    for name, fn in cards:
         with open(f"{OUT}/{name}.svg", "w", encoding="utf-8") as f:
-            f.write(fn(data))
-    print(f"Wrote stats, langs, streak and activity SVGs to {OUT}/")
+            f.write(fn())
+    print(f"Wrote {', '.join(n for n, _ in cards)} SVGs to {OUT}/")
 
 
 if __name__ == "__main__":
