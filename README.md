@@ -59,10 +59,15 @@
 
 ---
 
-## 📊 GitHub Stats
+<h2 align="center">◈ GitHub Stats ◈</h2>
 
 <p align="center">
-  <img src="assets/stats.svg" alt="GitHub stats" width="495"/>
+  <img src="assets/stats.svg" alt="GitHub stats" height="180"/>
+  <img src="assets/langs.svg" alt="Most used languages" height="180"/>
+</p>
+
+<p align="center">
+  <img src="assets/streak.svg" alt="Contribution streaks"/>
 </p>
 
 <p align="center">

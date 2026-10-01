@@ -18,6 +18,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
           GH_USER: userMarcPaul
+          THEME: purple   # or "cyan" / "matrix"
 
       - name: Commit updated SVGs
         run: |
