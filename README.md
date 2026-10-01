@@ -1,13 +1,6 @@
-<h1 align="center">Hi 👋, I'm marcxdev</h1>
-<h3 align="center">Just a Developer</h3>
-
 <p align="center">
-  <img src="https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif" width="600" alt="Matrix Rain Animation"/>
+  <img src="assets/header.svg" alt="Hi, I'm marcxdev. Just a developer." width="100%"/>
 </p>
-
----
-
-<h2 align="center">🚀 About Me</h2>
 
 <p align="center">
   🌱 Currently learning <b>MERN Stack</b><br/>
@@ -15,53 +8,17 @@
   ⚡ Fun fact: <b>Dev dev lang</b>
 </p>
 
----
+<br/>
 
 <h2 align="center">🛠️ Tech Stack</h2>
 
-<h3 align="center">💻 Programming Languages</h3>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="40" alt="Java" title="Java"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40" alt="JavaScript" title="JavaScript"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="40" alt="TypeScript" title="TypeScript"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="40" alt="Python" title="Python"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg" width="40" alt="Ruby" title="Ruby"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" width="40" alt="C" title="C"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" width="40" alt="C++" title="C++"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" width="40" alt="C#" title="C#"/>
+  <img src="assets/tech.svg" alt="Tech stack: Java, JavaScript, TypeScript, Python, Ruby, C, C++, C#, HTML, CSS, React, Node.js, Express, Django, Rails, Flutter, Dart, PostgreSQL, MySQL, MongoDB" width="100%"/>
 </p>
 
-<h3 align="center">🌐 Frontend</h3>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="40" alt="HTML5" title="HTML5"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="40" alt="CSS3" title="CSS3"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="40" alt="React" title="React"/>
-</p>
+<br/>
 
-<h3 align="center">⚙️ Backend</h3>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="40" alt="Node.js" title="Node.js"/>
-  <img src="https://img.icons8.com/color/48/express-js.png" width="40" alt="Express" title="Express"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-plain.svg" width="40" alt="Django" title="Django"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg" width="40" alt="Rails" title="Ruby on Rails"/>
-</p>
-
-<h3 align="center">📱 Mobile Development</h3>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg" width="40" alt="Flutter" title="Flutter"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg" width="40" alt="Dart" title="Dart"/>
-</p>
-
-<h3 align="center">🗄️ Databases</h3>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="40" alt="PostgreSQL" title="PostgreSQL"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" width="40" alt="MySQL" title="MySQL"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" width="40" alt="MongoDB" title="MongoDB"/>
-</p>
-
----
-
-<h2 align="center">◈ GitHub Stats ◈</h2>
+<h2 align="center">📊 GitHub Stats</h2>
 
 <p align="center">
   <img src="assets/stats.svg" alt="GitHub stats" height="180"/>
@@ -76,21 +33,22 @@
   <img src="assets/activity.svg" alt="Contribution graph" width="100%"/>
 </p>
 
----
+<br/>
 
 <h2 align="center">🤝 Connect With Me</h2>
 
-<!-- Replace the # with your links, or delete any you don't use -->
+<!-- Replace each # with your link, or delete any you don't use -->
 <p align="center">
-  <a href="#"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio"/></a>
+  <a href="https://github.com/userMarcPaul"><img src="https://img.shields.io/badge/GitHub-7c3aed?style=for-the-badge" alt="GitHub"/></a>
+  <a href="#"><img src="https://img.shields.io/badge/LinkedIn-7c3aed?style=for-the-badge" alt="LinkedIn"/></a>
+  <a href="#"><img src="https://img.shields.io/badge/Email-7c3aed?style=for-the-badge" alt="Email"/></a>
+  <a href="#"><img src="https://img.shields.io/badge/Portfolio-7c3aed?style=for-the-badge" alt="Portfolio"/></a>
 </p>
 
----
+<br/>
 
 <h2 align="center">🧠 Motto</h2>
 
 <p align="center">
-  <code>while (alive) { code(); learn(); repeat(); }</code>
+  <img src="assets/motto.svg" alt="while (alive) { code(); learn(); repeat(); }" width="520"/>
 </p>
