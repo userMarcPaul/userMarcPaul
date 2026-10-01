@@ -6,13 +6,13 @@
 </p>
 
 ---
-
+<center>
 ## 🚀 About Me
 
 - 🌱 Currently learning **MERN Stack**
 - 💬 Ask me about **Nothing 😆**
 - ⚡ Fun fact: **Dev dev lang**
-
+</center>
 ---
 
 ## 🛠️ Tech Stack
@@ -81,7 +81,7 @@
 <!-- Replace the # with your links, or delete any you don't use -->
 <p>
   <a href="#"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+  <a href="marcpaulrjespregante@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
   <a href="#"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio"/></a>
 </p>
 
