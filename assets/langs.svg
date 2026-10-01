@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="195" viewBox="0 0 380 195" role="img" aria-label="Most used languages for userMarcPaul">
+<title>Most used languages for userMarcPaul</title>
+<style>
+  text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+  .title { fill: #c084fc; font-size: 18px; font-weight: 600; }
+  .rain { fill: #2a2140; opacity: 0.6; font-size: 13px; animation: fall linear infinite; }
+  @keyframes fall { to { transform: translateY(595px); } }
+  .fade { opacity: 0; animation: fadein 0.4s ease-out forwards; }
+  @keyframes fadein { to { opacity: 1; } }
+  .lang { fill: #ffffff; font-size: 12px; }
+  .grow { transform-origin: 25px 55px; animation: grow 0.8s ease-out; }
+  @keyframes grow { from { transform: scaleX(0); } }
+  @media (prefers-reduced-motion: reduce) {
+    .rain { display: none; }
+    * { animation: none !important; opacity: 1 !important; }
+  }
+</style>
+<clipPath id="card-380x195"><rect width="380" height="195" rx="4.5"/></clipPath>
+<g clip-path="url(#card-380x195)">
+<rect width="380" height="195" fill="#0d1117"/>
+
+<text x="25" y="35" class="title">Most Used Languages</text>
+<clipPath id="bar"><rect x="25" y="55" width="330" height="8" rx="4"/></clipPath>
+<g clip-path="url(#bar)" class="grow">
+<rect x="25.00" y="55" width="300.66" height="8" fill="#a855f7"/>
+<rect x="325.16" y="55" width="15.14" height="8" fill="#f0abfc"/>
+<rect x="339.80" y="55" width="7.36" height="8" fill="#6d28d9"/>
+<rect x="346.66" y="55" width="4.25" height="8" fill="#e879f9"/>
+<rect x="350.41" y="55" width="3.06" height="8" fill="#818cf8"/>
+<rect x="352.97" y="55" width="2.53" height="8" fill="#ddd6fe"/>
+</g>
+<g class="fade" style="animation-delay:0.30s"><circle cx="30" cy="91" r="5" fill="#a855f7"/><text x="42" y="95" class="lang">Python 90.96%</text></g>
+<g class="fade" style="animation-delay:0.40s"><circle cx="200" cy="91" r="5" fill="#f0abfc"/><text x="212" y="95" class="lang">Dart 4.44%</text></g>
+<g class="fade" style="animation-delay:0.50s"><circle cx="30" cy="119" r="5" fill="#6d28d9"/><text x="42" y="123" class="lang">HTML 2.08%</text></g>
+<g class="fade" style="animation-delay:0.60s"><circle cx="200" cy="119" r="5" fill="#e879f9"/><text x="212" y="123" class="lang">JavaScript 1.14%</text></g>
+<g class="fade" style="animation-delay:0.70s"><circle cx="30" cy="147" r="5" fill="#818cf8"/><text x="42" y="151" class="lang">C++ 0.77%</text></g>
+<g class="fade" style="animation-delay:0.80s"><circle cx="200" cy="147" r="5" fill="#ddd6fe"/><text x="212" y="151" class="lang">CMake 0.62%</text></g>
+</g>
+</svg>
