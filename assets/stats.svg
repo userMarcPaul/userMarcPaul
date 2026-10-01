@@ -1,64 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="495" height="364" viewBox="0 0 495 364" role="img" aria-label="GitHub stats for userMarcPaul">
-  <title>GitHub stats for userMarcPaul</title>
-  <style>
-    text { font-family: 'Courier New', Consolas, 'Liberation Mono', monospace; }
-    .rain { fill: #063d14; opacity: 0.55; font-size: 13px; animation: fall linear infinite; }
-    @keyframes fall { from { transform: translateY(0); } to { transform: translateY(764px); } }
-    .prompt { fill: #00b32d; font-size: 13px; }
-    .cmd { fill: #00ff41; font-size: 13px; }
-    .key { fill: #00b32d; font-size: 13px; }
-    .dots { fill: #0a5c1f; }
-    .val { fill: #00ff41; font-size: 13px; font-weight: bold; }
-    .head { fill: #00b32d; font-size: 13px; }
-    .leg { fill: #00b32d; font-size: 12px; }
-    .pct { fill: #0a5c1f; }
-    .bar { fill: #063d14; }
-    .ln, .langs { opacity: 0; animation: show 0.01s forwards; }
-    @keyframes show { to { opacity: 1; } }
-    .cursor { fill: #00ff41; animation: blink 1s steps(1) infinite; }
-    @keyframes blink { 50% { opacity: 0; } }
-    @media (prefers-reduced-motion: reduce) {
-      .rain { animation: none; display: none; }
-      .ln, .langs { animation: none; opacity: 1; }
-      .cursor { animation: none; }
-    }
-  </style>
-  <defs><clipPath id="c"><rect width="495" height="364" rx="6"/></clipPath></defs>
-  <g clip-path="url(#c)">
-    <rect width="495" height="364" fill="#000000"/>
-    <text class="rain" style="animation-duration:10.6s;animation-delay:-5.0s" y="-200"><tspan x="13" dy="14">ﾅ</tspan><tspan x="13" dy="14">ﾘ</tspan><tspan x="13" dy="14">ｵ</tspan><tspan x="13" dy="14">ｳ</tspan><tspan x="13" dy="14">ｹ</tspan><tspan x="13" dy="14">ｴ</tspan><tspan x="13" dy="14">ｰ</tspan></text>
-    <text class="rain" style="animation-duration:10.6s;animation-delay:-7.4s" y="-200"><tspan x="41" dy="14">ﾘ</tspan><tspan x="41" dy="14">ｷ</tspan><tspan x="41" dy="14">ｴ</tspan><tspan x="41" dy="14">ｰ</tspan><tspan x="41" dy="14">ｱ</tspan><tspan x="41" dy="14">ﾊ</tspan><tspan x="41" dy="14">ﾐ</tspan><tspan x="41" dy="14">ﾓ</tspan><tspan x="41" dy="14">ｵ</tspan></text>
-    <text class="rain" style="animation-duration:6.2s;animation-delay:-3.3s" y="-200"><tspan x="68" dy="14">ﾂ</tspan><tspan x="68" dy="14">ﾘ</tspan><tspan x="68" dy="14">ｸ</tspan><tspan x="68" dy="14">ﾅ</tspan><tspan x="68" dy="14">ｴ</tspan><tspan x="68" dy="14">0</tspan><tspan x="68" dy="14">ｱ</tspan><tspan x="68" dy="14">ｱ</tspan></text>
-    <text class="rain" style="animation-duration:11.6s;animation-delay:-6.4s" y="-200"><tspan x="96" dy="14">ｻ</tspan><tspan x="96" dy="14">ｷ</tspan><tspan x="96" dy="14">ﾐ</tspan><tspan x="96" dy="14">ﾂ</tspan><tspan x="96" dy="14">ｱ</tspan><tspan x="96" dy="14">ｳ</tspan><tspan x="96" dy="14">ｸ</tspan><tspan x="96" dy="14">ｵ</tspan><tspan x="96" dy="14">ﾋ</tspan></text>
-    <text class="rain" style="animation-duration:11.0s;animation-delay:-6.1s" y="-200"><tspan x="123" dy="14">ｸ</tspan><tspan x="123" dy="14">ｻ</tspan><tspan x="123" dy="14">ｸ</tspan><tspan x="123" dy="14">ｵ</tspan><tspan x="123" dy="14">ﾋ</tspan><tspan x="123" dy="14">ｺ</tspan><tspan x="123" dy="14">ｱ</tspan><tspan x="123" dy="14">ﾐ</tspan></text>
-    <text class="rain" style="animation-duration:11.6s;animation-delay:-4.9s" y="-200"><tspan x="151" dy="14">ｴ</tspan><tspan x="151" dy="14">ｶ</tspan><tspan x="151" dy="14">ﾆ</tspan><tspan x="151" dy="14">ﾂ</tspan><tspan x="151" dy="14">ｺ</tspan><tspan x="151" dy="14">ｴ</tspan><tspan x="151" dy="14">ﾂ</tspan><tspan x="151" dy="14">0</tspan><tspan x="151" dy="14">ﾂ</tspan><tspan x="151" dy="14">ﾜ</tspan><tspan x="151" dy="14">ｳ</tspan></text>
-    <text class="rain" style="animation-duration:10.5s;animation-delay:-4.2s" y="-200"><tspan x="178" dy="14">ｻ</tspan><tspan x="178" dy="14">ｷ</tspan><tspan x="178" dy="14">ｺ</tspan><tspan x="178" dy="14">ｺ</tspan><tspan x="178" dy="14">ﾅ</tspan><tspan x="178" dy="14">ｰ</tspan><tspan x="178" dy="14">ｳ</tspan><tspan x="178" dy="14">ﾊ</tspan><tspan x="178" dy="14">ﾅ</tspan><tspan x="178" dy="14">ｲ</tspan><tspan x="178" dy="14">ｰ</tspan><tspan x="178" dy="14">ｸ</tspan></text>
-    <text class="rain" style="animation-duration:9.1s;animation-delay:-7.0s" y="-200"><tspan x="206" dy="14">ｶ</tspan><tspan x="206" dy="14">1</tspan><tspan x="206" dy="14">ｼ</tspan><tspan x="206" dy="14">ﾜ</tspan><tspan x="206" dy="14">ｵ</tspan><tspan x="206" dy="14">ｻ</tspan><tspan x="206" dy="14">ﾂ</tspan><tspan x="206" dy="14">1</tspan><tspan x="206" dy="14">ｳ</tspan><tspan x="206" dy="14">ﾋ</tspan><tspan x="206" dy="14">ｻ</tspan></text>
-    <text class="rain" style="animation-duration:9.6s;animation-delay:-3.8s" y="-200"><tspan x="233" dy="14">ﾊ</tspan><tspan x="233" dy="14">1</tspan><tspan x="233" dy="14">ｰ</tspan><tspan x="233" dy="14">ﾂ</tspan><tspan x="233" dy="14">ｱ</tspan><tspan x="233" dy="14">ｰ</tspan><tspan x="233" dy="14">ｲ</tspan><tspan x="233" dy="14">ｺ</tspan><tspan x="233" dy="14">ﾜ</tspan><tspan x="233" dy="14">ﾓ</tspan></text>
-    <text class="rain" style="animation-duration:11.5s;animation-delay:-6.3s" y="-200"><tspan x="261" dy="14">ｶ</tspan><tspan x="261" dy="14">ｳ</tspan><tspan x="261" dy="14">ｸ</tspan><tspan x="261" dy="14">ｱ</tspan><tspan x="261" dy="14">ｵ</tspan><tspan x="261" dy="14">ｷ</tspan><tspan x="261" dy="14">ｼ</tspan></text>
-    <text class="rain" style="animation-duration:11.7s;animation-delay:-0.1s" y="-200"><tspan x="288" dy="14">ｳ</tspan><tspan x="288" dy="14">1</tspan><tspan x="288" dy="14">ﾅ</tspan><tspan x="288" dy="14">1</tspan><tspan x="288" dy="14">ﾋ</tspan><tspan x="288" dy="14">ｹ</tspan><tspan x="288" dy="14">ｻ</tspan><tspan x="288" dy="14">ｼ</tspan><tspan x="288" dy="14">ﾓ</tspan></text>
-    <text class="rain" style="animation-duration:9.4s;animation-delay:-1.9s" y="-200"><tspan x="316" dy="14">ﾂ</tspan><tspan x="316" dy="14">ｳ</tspan><tspan x="316" dy="14">ﾘ</tspan><tspan x="316" dy="14">ｵ</tspan><tspan x="316" dy="14">ｳ</tspan><tspan x="316" dy="14">ｵ</tspan><tspan x="316" dy="14">ｼ</tspan><tspan x="316" dy="14">ｷ</tspan><tspan x="316" dy="14">ﾐ</tspan><tspan x="316" dy="14">ｲ</tspan><tspan x="316" dy="14">ｰ</tspan><tspan x="316" dy="14">1</tspan></text>
-    <text class="rain" style="animation-duration:9.7s;animation-delay:-4.4s" y="-200"><tspan x="343" dy="14">ﾐ</tspan><tspan x="343" dy="14">ｰ</tspan><tspan x="343" dy="14">1</tspan><tspan x="343" dy="14">ﾐ</tspan><tspan x="343" dy="14">1</tspan><tspan x="343" dy="14">ｱ</tspan><tspan x="343" dy="14">ｼ</tspan><tspan x="343" dy="14">ｼ</tspan><tspan x="343" dy="14">ﾓ</tspan><tspan x="343" dy="14">ﾘ</tspan></text>
-    <text class="rain" style="animation-duration:7.1s;animation-delay:-0.6s" y="-200"><tspan x="371" dy="14">ﾘ</tspan><tspan x="371" dy="14">ｸ</tspan><tspan x="371" dy="14">ﾆ</tspan><tspan x="371" dy="14">ｶ</tspan><tspan x="371" dy="14">ｼ</tspan><tspan x="371" dy="14">ﾅ</tspan></text>
-    <text class="rain" style="animation-duration:10.5s;animation-delay:-2.6s" y="-200"><tspan x="398" dy="14">ﾘ</tspan><tspan x="398" dy="14">ｹ</tspan><tspan x="398" dy="14">ｲ</tspan><tspan x="398" dy="14">ｻ</tspan><tspan x="398" dy="14">ｳ</tspan><tspan x="398" dy="14">ｳ</tspan><tspan x="398" dy="14">ｱ</tspan><tspan x="398" dy="14">ﾋ</tspan><tspan x="398" dy="14">ｱ</tspan><tspan x="398" dy="14">ｵ</tspan></text>
-    <text class="rain" style="animation-duration:7.0s;animation-delay:-1.8s" y="-200"><tspan x="426" dy="14">ﾘ</tspan><tspan x="426" dy="14">ﾓ</tspan><tspan x="426" dy="14">ｶ</tspan><tspan x="426" dy="14">1</tspan><tspan x="426" dy="14">ｺ</tspan><tspan x="426" dy="14">ｳ</tspan></text>
-    <text class="rain" style="animation-duration:7.9s;animation-delay:-3.8s" y="-200"><tspan x="453" dy="14">ｻ</tspan><tspan x="453" dy="14">ｹ</tspan><tspan x="453" dy="14">ﾆ</tspan><tspan x="453" dy="14">ﾜ</tspan><tspan x="453" dy="14">ｺ</tspan><tspan x="453" dy="14">ﾋ</tspan><tspan x="453" dy="14">ﾜ</tspan></text>
-    <text class="rain" style="animation-duration:7.6s;animation-delay:-1.9s" y="-200"><tspan x="481" dy="14">ｺ</tspan><tspan x="481" dy="14">ﾊ</tspan><tspan x="481" dy="14">0</tspan><tspan x="481" dy="14">ﾐ</tspan><tspan x="481" dy="14">ﾘ</tspan><tspan x="481" dy="14">ｷ</tspan></text>
-    <rect x="0.5" y="0.5" width="494" height="363" rx="6" fill="none" stroke="#0a5c1f"/>
-    <rect x="1" y="1" width="493" height="28" fill="#020a04"/>
-    <line x1="0" y1="29" x2="495" y2="29" stroke="#0a5c1f"/>
-    <circle cx="18" cy="15" r="4.5" fill="none" stroke="#00b32d"/>
-    <circle cx="34" cy="15" r="4.5" fill="none" stroke="#00b32d"/>
-    <circle cx="50" cy="15" r="4.5" fill="#00b32d"/>
-    <text x="247.5" y="19" class="prompt" text-anchor="middle">userMarcPaul@github: ~</text>
-    <text x="24" y="54"><tspan class="prompt">$ </tspan><tspan class="cmd">./stats --user userMarcPaul</tspan></text>
-    <g class="ln" style="animation-delay:0.40s"><text x="24" y="78" class="key">Total stars <tspan class="dots">...................</tspan></text><text x="471" y="78" class="val" text-anchor="end">17</text></g><g class="ln" style="animation-delay:0.52s"><text x="24" y="100" class="key">Commits (past year) <tspan class="dots">...........</tspan></text><text x="471" y="100" class="val" text-anchor="end">174</text></g><g class="ln" style="animation-delay:0.64s"><text x="24" y="122" class="key">Pull requests (past year) <tspan class="dots">.....</tspan></text><text x="471" y="122" class="val" text-anchor="end">31</text></g><g class="ln" style="animation-delay:0.76s"><text x="24" y="144" class="key">Issues (past year) <tspan class="dots">............</tspan></text><text x="471" y="144" class="val" text-anchor="end">0</text></g><g class="ln" style="animation-delay:0.88s"><text x="24" y="166" class="key">Public repos <tspan class="dots">..................</tspan></text><text x="471" y="166" class="val" text-anchor="end">17</text></g><g class="ln" style="animation-delay:1.00s"><text x="24" y="188" class="key">Followers <tspan class="dots">.....................</tspan></text><text x="471" y="188" class="val" text-anchor="end">1</text></g><g class="ln" style="animation-delay:1.12s"><text x="24" y="210" class="key">Contributions (past year) <tspan class="dots">.....</tspan></text><text x="471" y="210" class="val" text-anchor="end">216</text></g><g class="ln" style="animation-delay:1.24s"><text x="24" y="232" class="key">Current streak <tspan class="dots">................</tspan></text><text x="471" y="232" class="val" text-anchor="end">3 days</text></g>
-    <g class="langs" style="animation-delay:1.56s">
-      <text x="24" y="276" class="head">Top languages</text>
-      <rect x="24" y="286" width="447" height="8" class="bar"/>
-      <rect x="24.00" y="286" width="405.07" height="8" fill="#00ff41"/><rect x="430.57" y="286" width="18.34" height="8" fill="#00cc34"/><rect x="450.41" y="286" width="7.79" height="8" fill="#009926"/><rect x="459.69" y="286" width="3.59" height="8" fill="#00661a"/><rect x="464.78" y="286" width="1.96" height="8" fill="#2bff6a"/><rect x="468.24" y="286" width="1.26" height="8" fill="#7dffa2"/>
-      <rect x="24" y="306" width="8" height="8" fill="#00ff41"/><text x="38" y="314" class="leg">Python <tspan class="pct">91.0%</tspan></text><rect x="176" y="306" width="8" height="8" fill="#00cc34"/><text x="190" y="314" class="leg">Dart <tspan class="pct">4.4%</tspan></text><rect x="328" y="306" width="8" height="8" fill="#009926"/><text x="342" y="314" class="leg">HTML <tspan class="pct">2.1%</tspan></text><rect x="24" y="326" width="8" height="8" fill="#00661a"/><text x="38" y="334" class="leg">JavaScript <tspan class="pct">1.1%</tspan></text><rect x="176" y="326" width="8" height="8" fill="#2bff6a"/><text x="190" y="334" class="leg">C++ <tspan class="pct">0.8%</tspan></text><rect x="328" y="326" width="8" height="8" fill="#7dffa2"/><text x="342" y="334" class="leg">CMake <tspan class="pct">0.6%</tspan></text>
-      <rect x="463" y="266" width="8" height="14" class="cursor"/>
-    </g>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="195" viewBox="0 0 440 195" role="img" aria-label="GitHub stats for userMarcPaul">
+<title>GitHub stats for userMarcPaul</title>
+<style>
+  text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+  .title { fill: #c084fc; font-size: 18px; font-weight: 600; }
+  .rain { fill: #2a2140; opacity: 0.6; font-size: 13px; animation: fall linear infinite; }
+  @keyframes fall { to { transform: translateY(595px); } }
+  .fade { opacity: 0; animation: fadein 0.4s ease-out forwards; }
+  @keyframes fadein { to { opacity: 1; } }
+  .label { fill: #ffffff; font-size: 14px; font-weight: 600; }
+  .level { fill: #ffffff; font-size: 24px; font-weight: 800; }
+  .ring { stroke-dasharray: 251.33; stroke-dashoffset: 187.45;
+           animation: ringfill 1s ease-out forwards; }
+  @keyframes ringfill { from { stroke-dashoffset: 251.33; } }
+  @media (prefers-reduced-motion: reduce) {
+    .rain { display: none; }
+    * { animation: none !important; opacity: 1 !important; }
+  }
+</style>
+<clipPath id="card-440x195"><rect width="440" height="195" rx="4.5"/></clipPath>
+<g clip-path="url(#card-440x195)">
+<rect width="440" height="195" fill="#0d1117"/>
+
+<text x="25" y="35" class="title">userMarcPaul's GitHub Stats</text>
+<g class="fade" style="animation-delay:0.15s"><g transform="translate(25,53)" fill="none" stroke="#c084fc" color="#c084fc" stroke-width="1.4" stroke-linecap="round"><polygon points="8.00,1.60 9.82,6.09 14.66,6.44 10.95,9.56 12.11,14.26 8.00,11.70 3.89,14.26 5.05,9.56 1.34,6.44 6.18,6.09" stroke-linejoin="round"/></g><text x="50" y="65" class="label">Total Stars Earned:</text><text x="255" y="65" class="label">17</text></g>
+<g class="fade" style="animation-delay:0.27s"><g transform="translate(25,78)" fill="none" stroke="#c084fc" color="#c084fc" stroke-width="1.4" stroke-linecap="round"><path d="M2.2 8a5.8 5.8 0 1 0 1.7-4.1"/><path d="M1.6 2.2v2.6h2.6"/><path d="M8 4.8V8l2.3 1.5"/></g><text x="50" y="90" class="label">Total Commits (last year):</text><text x="255" y="90" class="label">174</text></g>
+<g class="fade" style="animation-delay:0.39s"><g transform="translate(25,103)" fill="none" stroke="#c084fc" color="#c084fc" stroke-width="1.4" stroke-linecap="round"><circle cx="4" cy="3.5" r="1.7"/><circle cx="4" cy="12.5" r="1.7"/><circle cx="12" cy="12.5" r="1.7"/><path d="M4 5.2v5.6"/><path d="M12 10.8V6.3a2 2 0 0 0-2-2H7.4"/><path d="M8.9 2.7 7.3 4.3l1.6 1.6"/></g><text x="50" y="115" class="label">Total PRs:</text><text x="255" y="115" class="label">36</text></g>
+<g class="fade" style="animation-delay:0.51s"><g transform="translate(25,128)" fill="none" stroke="#c084fc" color="#c084fc" stroke-width="1.4" stroke-linecap="round"><circle cx="8" cy="8" r="6.3"/><circle cx="8" cy="8" r="1.1" fill="currentColor"/></g><text x="50" y="140" class="label">Total Issues:</text><text x="255" y="140" class="label">0</text></g>
+<g class="fade" style="animation-delay:0.63s"><g transform="translate(25,153)" fill="none" stroke="#c084fc" color="#c084fc" stroke-width="1.4" stroke-linecap="round"><path d="M3 13V3a1.5 1.5 0 0 1 1.5-1.5H13v10H4.5A1.5 1.5 0 0 0 3 13a1.5 1.5 0 0 0 1.5 1.5H13"/><path d="M6 11.5v3.5l1.25-.9 1.25.9v-3.5"/></g><text x="50" y="165" class="label">Contributed to (last year):</text><text x="255" y="165" class="label">4</text></g>
+<circle cx="360" cy="105" r="40" fill="none" stroke="#a855f7" stroke-opacity="0.2" stroke-width="6"/><circle cx="360" cy="105" r="40" fill="none" stroke="#a855f7" stroke-width="6" stroke-linecap="round" class="ring" transform="rotate(-90 360 105)"/><text x="360" y="105" class="level" text-anchor="middle" dominant-baseline="central">B-</text>
+</g>
 </svg>
