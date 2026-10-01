@@ -40,8 +40,8 @@
 <!-- Replace each # with your link, or delete any you don't use -->
 <p align="center">
   <a href="https://github.com/userMarcPaul"><img src="https://img.shields.io/badge/GitHub-7c3aed?style=for-the-badge" alt="GitHub"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/LinkedIn-7c3aed?style=for-the-badge" alt="LinkedIn"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/Email-7c3aed?style=for-the-badge" alt="Email"/></a>
+  <a href="https://www.linkedin.com/in/marc-paul-rj-espregante-94a319369/"><img src="https://img.shields.io/badge/LinkedIn-7c3aed?style=for-the-badge" alt="LinkedIn"/></a>
+  <a href="marcpaulrjespregante@gmail.com"><img src="https://img.shields.io/badge/Email-7c3aed?style=for-the-badge" alt="Email"/></a>
   <a href="#"><img src="https://img.shields.io/badge/Portfolio-7c3aed?style=for-the-badge" alt="Portfolio"/></a>
 </p>
 
