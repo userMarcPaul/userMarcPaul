@@ -9,6 +9,7 @@ Outputs (in assets/):
   header.svg    animated intro header
   tech.svg      tech stack
   motto.svg     motto as a code window
+  Each card also gets a -light.svg version for GitHub's light mode.
 
 Env vars:
   GH_TOKEN  GitHub token (the workflow passes this in)
@@ -39,6 +40,22 @@ THEMES = {
         "lang_colors": ["#a855f7", "#f0abfc", "#6d28d9", "#e879f9", "#818cf8", "#ddd6fe"],
         "label_size": 14, "value_x": 255,
     },
+    "purple-light": {
+        "bg": "#ffffff", "title": "#7c3aed", "text": "#1f2328", "muted": "#59636e",
+        "icon": "#7c3aed", "ring": "#8b5cf6", "fire": "#db2777", "grid": "#e9e3f7",
+        "font": "'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif",
+        "lang_colors": ["#7c3aed", "#c026d3", "#4c1d95", "#e879f9", "#6366f1", "#c4b5fd"],
+        "label_size": 14, "value_x": 255,
+        "panel": "#f6f8fa", "subtext": "#3d3d4e", "lineno": "#a8a8bd", "is_light": True,
+    },
+    "cyan-light": {
+        "bg": "#ffffff", "title": "#0891b2", "text": "#1f2328", "muted": "#59636e",
+        "icon": "#0891b2", "ring": "#06b6d4", "fire": "#e5534b", "grid": "#d8f1f6",
+        "font": "'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif",
+        "lang_colors": None,
+        "label_size": 14, "value_x": 255,
+        "panel": "#f6f8fa", "subtext": "#3d3d4e", "lineno": "#a8a8bd", "is_light": True,
+    },
     "matrix": {
         "bg": "#000000", "title": "#00ff41", "text": "#00e03a", "muted": "#0f7a2a",
         "icon": "#00ff41", "ring": "#00ff41", "fire": "#00ff41", "grid": "#063d14",
@@ -47,7 +64,12 @@ THEMES = {
         "label_size": 13, "value_x": 274,
     },
 }
-T = THEMES.get(os.environ.get("THEME", "purple"), THEMES["purple"])
+THEME_NAME = os.environ.get("THEME", "purple")
+if THEME_NAME not in THEMES:
+    THEME_NAME = "purple"
+# Light-mode partner for each theme (matrix has no light version, so it's used for both)
+LIGHT_OF = {"purple": "purple-light", "cyan": "cyan-light", "matrix": "matrix"}
+T = THEMES[THEME_NAME]
 TODAY = date.today()
 
 # ---------------------------------------------------------------- data
@@ -485,6 +507,7 @@ MOTTO = [
 
 MONO = "'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace"
 ICON_OVERRIDE = {}  # used by the local preview only
+_ICON_CACHE = {}
 
 
 def icon_data_uri(path, offline):
@@ -492,12 +515,15 @@ def icon_data_uri(path, offline):
     import base64
     if path in ICON_OVERRIDE:
         return ICON_OVERRIDE[path]
+    if path in _ICON_CACHE:
+        return _ICON_CACHE[path]
     if offline:
         return None
     try:
         with urllib.request.urlopen(f"{DEVICON}/{path}.svg", timeout=20) as r:
             raw = r.read()
-        return "data:image/svg+xml;base64," + base64.b64encode(raw).decode()
+        _ICON_CACHE[path] = "data:image/svg+xml;base64," + base64.b64encode(raw).decode()
+        return _ICON_CACHE[path]
     except Exception as e:
         print(f"  could not load {path}: {e}")
         return None
@@ -588,7 +614,7 @@ def tech_svg(offline=False):
                 ty = y + 28
                 uri = icon_data_uri(path, offline)
                 if uri:
-                    filt = ' filter="url(#light)"' if light else ""
+                    filt = ' filter="url(#light)"' if light and not T.get("is_light") else ""
                     img = f'<image x="{tx + 12:.1f}" y="{ty + 12}" width="32" height="32" href="{uri}" xlink:href="{uri}"{filt}/>'
                 else:
                     img = f'<text x="{tx + tile / 2:.1f}" y="{ty + 34}" class="init" text-anchor="middle">{escape(tname[:2])}</text>'
@@ -600,8 +626,8 @@ def tech_svg(offline=False):
             x += widths[gi] + gap
     css = f'''.group {{ fill: {T["title"]}; font-size: 15px; font-weight: 700; }}
   .count {{ fill: {T["muted"]}; font-size: 12px; font-weight: 400; }}
-  .tile {{ fill: #161b22; stroke: {T["grid"]}; stroke-width: 1; }}
-  .tname {{ fill: #c9c9d9; font-size: 11.5px; }}
+  .tile {{ fill: {T.get("panel", "#161b22")}; stroke: {T["grid"]}; stroke-width: 1; }}
+  .tname {{ fill: {T.get("subtext", "#c9c9d9")}; font-size: 11.5px; }}
   .init {{ fill: {T["title"]}; font-size: 16px; font-weight: 700; }}
   .sep {{ stroke: {T["grid"]}; stroke-width: 1; }}'''
     svg = frame(W, H, "Tech stack", "\n".join(body), css)
@@ -622,15 +648,15 @@ def motto_svg():
                     f'<text x="52" y="{y}" class="code" xml:space="preserve">{spans}</text>')
     last_y = 72 + (len(MOTTO) - 1) * lh
     body = f'''<rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="10" fill="none" stroke="{T["grid"]}"/>
-<rect x="1" y="1" width="{W - 2}" height="34" rx="9" fill="#161b22"/>
-<rect x="1" y="26" width="{W - 2}" height="9" fill="#161b22"/>
+<rect x="1" y="1" width="{W - 2}" height="34" rx="9" fill="{T.get("panel", "#161b22")}"/>
+<rect x="1" y="26" width="{W - 2}" height="9" fill="{T.get("panel", "#161b22")}"/>
 <line x1="1" y1="35" x2="{W - 1}" y2="35" stroke="{T["grid"]}"/>
 <circle cx="22" cy="18" r="5.5" fill="#ff5f57"/><circle cx="40" cy="18" r="5.5" fill="#febc2e"/><circle cx="58" cy="18" r="5.5" fill="#28c840"/>
 <text x="{W / 2}" y="22" class="file" text-anchor="middle">motto.js</text>
 {"".join(rows)}
 <rect x="66" y="{last_y - 15}" width="9" height="19" class="caret"/>'''
     css = f'''.file {{ fill: {T["muted"]}; font-size: 12.5px; }}
-  .ln {{ fill: #4b4b63; font-family: {MONO}; font-size: 15px; }}
+  .ln {{ fill: {T.get("lineno", "#4b4b63")}; font-family: {MONO}; font-size: 15px; }}
   .code {{ font-family: {MONO}; font-size: 16px; }}
   .caret {{ fill: {T["ring"]}; animation: blink 1s steps(1) infinite; }}
   @keyframes blink {{ 50% {{ opacity: 0; }} }}'''
@@ -638,16 +664,20 @@ def motto_svg():
 
 
 def main():
+    global T
     offline = "--demo" in sys.argv
     data = demo() if offline else fetch()
     os.makedirs(OUT, exist_ok=True)
     cards = [("stats", lambda: stats_svg(data)), ("langs", lambda: langs_svg(data)),
              ("streak", lambda: streak_svg(data)), ("activity", lambda: activity_svg(data)),
              ("header", hero_svg), ("tech", lambda: tech_svg(offline)), ("motto", motto_svg)]
-    for name, fn in cards:
-        with open(f"{OUT}/{name}.svg", "w", encoding="utf-8") as f:
-            f.write(fn())
-    print(f"Wrote {', '.join(n for n, _ in cards)} SVGs to {OUT}/")
+    # name.svg is the dark version, name-light.svg the light one
+    for suffix, theme in [("", THEME_NAME), ("-light", LIGHT_OF.get(THEME_NAME, THEME_NAME))]:
+        T = THEMES[theme]
+        for name, fn in cards:
+            with open(f"{OUT}/{name}{suffix}.svg", "w", encoding="utf-8") as f:
+                f.write(fn())
+    print(f"Wrote dark and light versions of {', '.join(n for n, _ in cards)} to {OUT}/")
 
 
 if __name__ == "__main__":
