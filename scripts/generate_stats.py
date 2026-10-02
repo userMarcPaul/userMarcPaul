@@ -7,6 +7,7 @@ Outputs (in assets/):
   streak.svg    total contributions, current streak, longest streak
   activity.svg  contribution line graph (last 31 days)
   header.svg    animated intro header
+  about.svg     bio cards
   tech.svg      tech stack
   motto.svg     motto as a code window
   Each card also gets a -light.svg version for GitHub's light mode.
@@ -663,6 +664,43 @@ def motto_svg():
     return frame(W, H, "Motto", body, css)
 
 
+ABOUT = [
+    ("sprout", "Currently learning", "MERN Stack"),
+    ("chat", "Ask me about", "Nothing \U0001F606"),
+    ("bolt", "Fun fact", "Dev dev lang"),
+]
+
+ABOUT_ICONS = {
+    "sprout": '<path d="M12 21v-8"/><path d="M12 13c0-4 2.5-6.5 7-6.5 0 4.5-2.5 6.5-7 6.5Z"/>'
+              '<path d="M12 15.5c0-3.2-2-5.2-5.6-5.2 0 3.6 2 5.2 5.6 5.2Z"/><path d="M8 21h8"/>',
+    "chat": '<path d="M4.5 5.5h15a1.5 1.5 0 0 1 1.5 1.5v8.5a1.5 1.5 0 0 1-1.5 1.5H10l-4.5 3.5V17h-1A1.5 1.5 0 0 1 3 15.5V7a1.5 1.5 0 0 1 1.5-1.5Z"/>'
+            '<path d="M8 10.5h8"/><path d="M8 13.5h5"/>',
+    "bolt": '<path d="M13.5 2.5 5 13.5h6l-1 8 8.5-11h-6l1-8Z"/>',
+}
+
+
+def about_svg():
+    W, H = 850, 112
+    gap = 18
+    cw = (W - 2 * 24 - gap * (len(ABOUT) - 1)) / len(ABOUT)
+    body = []
+    for i, (ic, label, value) in enumerate(ABOUT):
+        x = 24 + i * (cw + gap)
+        body.append(f'''<g class="fade" style="animation-delay:{0.1 + i * 0.12:.2f}s">
+  <rect x="{x:.1f}" y="12" width="{cw:.1f}" height="88" rx="14" class="card"/>
+  <rect x="{x + 20:.1f}" y="32" width="48" height="48" rx="12" class="badge"/>
+  <g transform="translate({x + 32:.1f},44)" fill="none" stroke="{T["icon"]}" stroke-width="1.7"
+     stroke-linecap="round" stroke-linejoin="round">{ABOUT_ICONS[ic]}</g>
+  <text x="{x + 84:.1f}" y="51" class="alabel">{escape(label)}</text>
+  <text x="{x + 84:.1f}" y="74" class="avalue">{escape(value)}</text>
+</g>''')
+    css = f'''.card {{ fill: {T.get("panel", "#161b22")}; stroke: {T["grid"]}; stroke-width: 1; }}
+  .badge {{ fill: {T["ring"]}; fill-opacity: 0.14; }}
+  .alabel {{ fill: {T["muted"]}; font-size: 13px; }}
+  .avalue {{ fill: {T["text"]}; font-size: 17px; font-weight: 700; }}'''
+    return frame(W, H, "About me: " + "; ".join(f"{l} {v}" for _, l, v in ABOUT), "\n".join(body), css)
+
+
 def main():
     global T
     offline = "--demo" in sys.argv
@@ -670,7 +708,7 @@ def main():
     os.makedirs(OUT, exist_ok=True)
     cards = [("stats", lambda: stats_svg(data)), ("langs", lambda: langs_svg(data)),
              ("streak", lambda: streak_svg(data)), ("activity", lambda: activity_svg(data)),
-             ("header", hero_svg), ("tech", lambda: tech_svg(offline)), ("motto", motto_svg)]
+             ("header", hero_svg), ("about", about_svg), ("tech", lambda: tech_svg(offline)), ("motto", motto_svg)]
     # name.svg is the dark version, name-light.svg the light one
     for suffix, theme in [("", THEME_NAME), ("-light", LIGHT_OF.get(THEME_NAME, THEME_NAME))]:
         T = THEMES[theme]
