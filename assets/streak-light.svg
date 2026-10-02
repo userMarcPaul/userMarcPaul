@@ -2,15 +2,15 @@
 <title>Contribution streaks for userMarcPaul</title>
 <style>
   text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
-  .title { fill: #c084fc; font-size: 18px; font-weight: 600; }
-  .rain { fill: #2a2140; opacity: 0.6; font-size: 13px; animation: fall linear infinite; }
+  .title { fill: #7c3aed; font-size: 18px; font-weight: 600; }
+  .rain { fill: #e9e3f7; opacity: 0.6; font-size: 13px; animation: fall linear infinite; }
   @keyframes fall { to { transform: translateY(595px); } }
   .fade { opacity: 0; animation: fadein 0.4s ease-out forwards; }
   @keyframes fadein { to { opacity: 1; } }
-  .num { fill: #ffffff; font-size: 28px; font-weight: 700; }
-  .lab { fill: #ffffff; font-size: 14px; }
-  .cur { fill: #a855f7; font-size: 14px; font-weight: 700; }
-  .date { fill: #a1a1b5; font-size: 12px; }
+  .num { fill: #1f2328; font-size: 28px; font-weight: 700; }
+  .lab { fill: #1f2328; font-size: 14px; }
+  .cur { fill: #8b5cf6; font-size: 14px; font-weight: 700; }
+  .date { fill: #59636e; font-size: 12px; }
   .ringin { transform-origin: 247.5px 72px; animation: pop 0.6s ease-out; }
   @keyframes pop { from { transform: scale(0.6); opacity: 0; } }
   @media (prefers-reduced-motion: reduce) {
@@ -20,7 +20,7 @@
 </style>
 <clipPath id="card-495x195"><rect width="495" height="195" rx="4.5"/></clipPath>
 <g clip-path="url(#card-495x195)">
-<rect width="495" height="195" fill="#0d1117"/>
+<rect width="495" height="195" fill="#ffffff"/>
 
 
 <g class="fade" style="animation-delay:0.2s">
@@ -29,8 +29,8 @@
   <text x="82.5" y="150" class="date" text-anchor="middle">Nov 8, 2024 - Present</text>
 </g>
 <mask id="gap"><rect width="495" height="195" fill="white"/><circle cx="247.5" cy="32" r="13" fill="black"/></mask>
-<circle cx="247.5" cy="72" r="40" fill="none" stroke="#a855f7" stroke-width="5" mask="url(#gap)" class="ringin"/>
-<g transform="translate(247.5,32)" fill="#f472b6" class="fade" style="animation-delay:0.6s"><path d="M0 -11 C1.5 -7 7 -4.5 7 1.5 A7 7 0 0 1 -7 1.5 C-7 -2.5 -4.5 -5 -3.5 -7.5 C-2.5 -5 -1.5 -4 -0.5 -3.5 C-0.5 -6.5 -1 -9 0 -11 Z" /><path d="M0 -1.5 C1 0.5 3 1.5 3 3.5 A3 3 0 0 1 -3 3.5 C-3 1.8 -1.5 0.8 0 -1.5 Z" fill="#0d1117"/></g>
+<circle cx="247.5" cy="72" r="40" fill="none" stroke="#8b5cf6" stroke-width="5" mask="url(#gap)" class="ringin"/>
+<g transform="translate(247.5,32)" fill="#db2777" class="fade" style="animation-delay:0.6s"><path d="M0 -11 C1.5 -7 7 -4.5 7 1.5 A7 7 0 0 1 -7 1.5 C-7 -2.5 -4.5 -5 -3.5 -7.5 C-2.5 -5 -1.5 -4 -0.5 -3.5 C-0.5 -6.5 -1 -9 0 -11 Z" /><path d="M0 -1.5 C1 0.5 3 1.5 3 3.5 A3 3 0 0 1 -3 3.5 C-3 1.8 -1.5 0.8 0 -1.5 Z" fill="#ffffff"/></g>
 <g class="fade" style="animation-delay:0.4s">
   <text x="247.5" y="82" class="num" text-anchor="middle">1</text>
   <text x="247.5" y="136" class="cur" text-anchor="middle">Current Streak</text>

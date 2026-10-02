@@ -2,19 +2,19 @@
 <title>Contributions in the last 31 days for userMarcPaul</title>
 <style>
   text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
-  .title { fill: #c084fc; font-size: 18px; font-weight: 600; }
-  .rain { fill: #2a2140; opacity: 0.6; font-size: 13px; animation: fall linear infinite; }
+  .title { fill: #7c3aed; font-size: 18px; font-weight: 600; }
+  .rain { fill: #e9e3f7; opacity: 0.6; font-size: 13px; animation: fall linear infinite; }
   @keyframes fall { to { transform: translateY(700px); } }
   .fade { opacity: 0; animation: fadein 0.4s ease-out forwards; }
   @keyframes fadein { to { opacity: 1; } }
-  .sub { fill: #a1a1b5; font-size: 12px; }
-  .axis { fill: #a1a1b5; font-size: 11px; }
-  .grid { stroke: #2a2140; stroke-dasharray: 3 4; }
-  .line { fill: none; stroke: #a855f7; stroke-width: 2.5; stroke-linejoin: round;
+  .sub { fill: #59636e; font-size: 12px; }
+  .axis { fill: #59636e; font-size: 11px; }
+  .grid { stroke: #e9e3f7; stroke-dasharray: 3 4; }
+  .line { fill: none; stroke: #8b5cf6; stroke-width: 2.5; stroke-linejoin: round;
            stroke-dasharray: 999; stroke-dashoffset: 999; animation: draw 2s ease-out 0.3s forwards; }
   @keyframes draw { to { stroke-dashoffset: 0; } }
   .area { fill: url(#fade-area); opacity: 0; animation: fadein 0.8s ease-out 1.8s forwards; }
-  .pt { fill: #0d1117; stroke: #a855f7; stroke-width: 2; opacity: 0; animation: fadein 0.4s 2.1s forwards; }
+  .pt { fill: #ffffff; stroke: #8b5cf6; stroke-width: 2; opacity: 0; animation: fadein 0.4s 2.1s forwards; }
   @media (prefers-reduced-motion: reduce) { .line { stroke-dashoffset: 0; } }
   @media (prefers-reduced-motion: reduce) {
     .rain { display: none; }
@@ -23,11 +23,11 @@
 </style>
 <clipPath id="card-850x300"><rect width="850" height="300" rx="4.5"/></clipPath>
 <g clip-path="url(#card-850x300)">
-<rect width="850" height="300" fill="#0d1117"/>
+<rect width="850" height="300" fill="#ffffff"/>
 
 
 <defs><linearGradient id="fade-area" x1="0" y1="0" x2="0" y2="1">
-  <stop offset="0" stop-color="#a855f7" stop-opacity="0.3"/><stop offset="1" stop-color="#a855f7" stop-opacity="0"/>
+  <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.3"/><stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
 </linearGradient></defs>
 <text x="56" y="35" class="title">Contributions, last 31 days</text>
 <text x="826" y="35" class="sub" text-anchor="end">41 total  /  best day 23</text>

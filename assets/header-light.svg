@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="210" viewBox="0 0 850 210" role="img" aria-label="Hi, I'm marcxdev">
+<title>Hi, I'm marcxdev</title>
+<style>
+  text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+  .title { fill: #7c3aed; font-size: 18px; font-weight: 600; }
+  .rain { fill: #e9e3f7; opacity: 0.6; font-size: 13px; animation: fall linear infinite; }
+  @keyframes fall { to { transform: translateY(610px); } }
+  .fade { opacity: 0; animation: fadein 0.4s ease-out forwards; }
+  @keyframes fadein { to { opacity: 1; } }
+  .hi { fill: #59636e; font-size: 18px; }
+  .name { font-size: 52px; font-weight: 800; letter-spacing: -1px; }
+  .prompt { fill: #8b5cf6; font-family: 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace; font-size: 19px; font-weight: 700; }
+  .typed { fill: #1f2328; font-family: 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace; font-size: 19px; }
+  .tag { opacity: 0; animation: slotvis 9.6s infinite; }
+  @keyframes slotvis { 0% { opacity: 1; } 32.33% { opacity: 1; } 33.33%, 100% { opacity: 0; } }
+  .typer { transform: scaleX(0); animation: type 9.6s steps(24) infinite; }
+  @keyframes type { 0% { transform: scaleX(0); } 14.00%, 100% { transform: scaleX(1); } }
+  .caret { fill: #8b5cf6; opacity: 0.85; animation: move 9.6s steps(24) infinite, blink 0.9s steps(1) infinite; }
+  @keyframes move { 0% { transform: translateX(0); } 14.00%, 100% { transform: translateX(var(--w)); } }
+  @keyframes blink { 50% { fill-opacity: 0; } }
+  .glow { animation: drift 10s ease-in-out infinite alternate; }
+  @keyframes drift { to { transform: translateX(90px); } }
+  @media (prefers-reduced-motion: reduce) {
+    .tag:first-of-type { opacity: 1 !important; }
+    .tag:not(:first-of-type) { display: none; }
+    .typer { transform: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .rain { display: none; }
+    * { animation: none !important; opacity: 1 !important; }
+  }
+</style>
+<clipPath id="card-850x210"><rect width="850" height="210" rx="4.5"/></clipPath>
+<g clip-path="url(#card-850x210)">
+<rect width="850" height="210" fill="#ffffff"/>
+
+<defs>
+  <radialGradient id="g1" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.28"/><stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="g2" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#db2777" stop-opacity="0.16"/><stop offset="1" stop-color="#db2777" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="namefill" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#db2777"/>
+  </linearGradient>
+</defs>
+<ellipse cx="330" cy="105" rx="300" ry="100" fill="url(#g1)" class="glow"/>
+<ellipse cx="560" cy="115" rx="240" ry="90" fill="url(#g2)"/>
+<text x="425.0" y="62" class="hi" text-anchor="middle">Hi, I'm</text>
+<text x="425.0" y="118" class="name" text-anchor="middle" fill="url(#namefill)">marcxdev</text>
+<g class="tag" style="animation-delay:0.0s" transform="translate(346.8,166)"><text x="-26" y="0" class="prompt">&gt;</text><clipPath id="type0"><rect x="0" y="-22" width="184" height="30" class="typer" style="animation-delay:0.0s;animation-timing-function:steps(16)"/></clipPath><text class="typed" clip-path="url(#type0)" textLength="182.4" lengthAdjust="spacing">Just a developer</text><rect x="0" y="-16" width="10" height="20" class="caret" style="--w:186px;animation-delay:0.0s, 0s;animation-timing-function:steps(16), steps(1)"/></g><g class="tag" style="animation-delay:3.2s" transform="translate(306.9,166)"><text x="-26" y="0" class="prompt">&gt;</text><clipPath id="type1"><rect x="0" y="-22" width="264" height="30" class="typer" style="animation-delay:3.2s;animation-timing-function:steps(23)"/></clipPath><text class="typed" clip-path="url(#type1)" textLength="262.2" lengthAdjust="spacing">Learning the MERN stack</text><rect x="0" y="-16" width="10" height="20" class="caret" style="--w:266px;animation-delay:3.2s, 0s;animation-timing-function:steps(23), steps(1)"/></g><g class="tag" style="animation-delay:6.4s" transform="translate(289.8,166)"><text x="-26" y="0" class="prompt">&gt;</text><clipPath id="type2"><rect x="0" y="-22" width="298" height="30" class="typer" style="animation-delay:6.4s;animation-timing-function:steps(26)"/></clipPath><text class="typed" clip-path="url(#type2)" textLength="296.4" lengthAdjust="spacing">Building apps with Flutter</text><rect x="0" y="-16" width="10" height="20" class="caret" style="--w:300px;animation-delay:6.4s, 0s;animation-timing-function:steps(26), steps(1)"/></g>
+</g>
+</svg>
