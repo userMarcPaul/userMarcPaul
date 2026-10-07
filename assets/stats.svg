@@ -9,7 +9,7 @@
   @keyframes fadein { to { opacity: 1; } }
   .label { fill: #ffffff; font-size: 14px; font-weight: 600; }
   .level { fill: #ffffff; font-size: 24px; font-weight: 800; }
-  .ring { stroke-dasharray: 251.33; stroke-dashoffset: 177.91;
+  .ring { stroke-dasharray: 251.33; stroke-dashoffset: 177.09;
            animation: ringfill 1s ease-out forwards; }
   @keyframes ringfill { from { stroke-dashoffset: 251.33; } }
   @media (prefers-reduced-motion: reduce) {
@@ -24,9 +24,9 @@
 <text x="25" y="35" class="title">userMarcPaul's GitHub Stats</text>
 <g class="fade" style="animation-delay:0.15s"><g transform="translate(25,53)" fill="none" stroke="#c084fc" color="#c084fc" stroke-width="1.4" stroke-linecap="round"><polygon points="8.00,1.60 9.82,6.09 14.66,6.44 10.95,9.56 12.11,14.26 8.00,11.70 3.89,14.26 5.05,9.56 1.34,6.44 6.18,6.09" stroke-linejoin="round"/></g><text x="50" y="65" class="label">Total Stars Earned:</text><text x="255" y="65" class="label">17</text></g>
 <g class="fade" style="animation-delay:0.27s"><g transform="translate(25,78)" fill="none" stroke="#c084fc" color="#c084fc" stroke-width="1.4" stroke-linecap="round"><path d="M2.2 8a5.8 5.8 0 1 0 1.7-4.1"/><path d="M1.6 2.2v2.6h2.6"/><path d="M8 4.8V8l2.3 1.5"/></g><text x="50" y="90" class="label">Total Commits (last year):</text><text x="255" y="90" class="label">196</text></g>
-<g class="fade" style="animation-delay:0.39s"><g transform="translate(25,103)" fill="none" stroke="#c084fc" color="#c084fc" stroke-width="1.4" stroke-linecap="round"><circle cx="4" cy="3.5" r="1.7"/><circle cx="4" cy="12.5" r="1.7"/><circle cx="12" cy="12.5" r="1.7"/><path d="M4 5.2v5.6"/><path d="M12 10.8V6.3a2 2 0 0 0-2-2H7.4"/><path d="M8.9 2.7 7.3 4.3l1.6 1.6"/></g><text x="50" y="115" class="label">Total PRs:</text><text x="255" y="115" class="label">53</text></g>
+<g class="fade" style="animation-delay:0.39s"><g transform="translate(25,103)" fill="none" stroke="#c084fc" color="#c084fc" stroke-width="1.4" stroke-linecap="round"><circle cx="4" cy="3.5" r="1.7"/><circle cx="4" cy="12.5" r="1.7"/><circle cx="12" cy="12.5" r="1.7"/><path d="M4 5.2v5.6"/><path d="M12 10.8V6.3a2 2 0 0 0-2-2H7.4"/><path d="M8.9 2.7 7.3 4.3l1.6 1.6"/></g><text x="50" y="115" class="label">Total PRs:</text><text x="255" y="115" class="label">55</text></g>
 <g class="fade" style="animation-delay:0.51s"><g transform="translate(25,128)" fill="none" stroke="#c084fc" color="#c084fc" stroke-width="1.4" stroke-linecap="round"><circle cx="8" cy="8" r="6.3"/><circle cx="8" cy="8" r="1.1" fill="currentColor"/></g><text x="50" y="140" class="label">Total Issues:</text><text x="255" y="140" class="label">0</text></g>
-<g class="fade" style="animation-delay:0.63s"><g transform="translate(25,153)" fill="none" stroke="#c084fc" color="#c084fc" stroke-width="1.4" stroke-linecap="round"><path d="M3 13V3a1.5 1.5 0 0 1 1.5-1.5H13v10H4.5A1.5 1.5 0 0 0 3 13a1.5 1.5 0 0 0 1.5 1.5H13"/><path d="M6 11.5v3.5l1.25-.9 1.25.9v-3.5"/></g><text x="50" y="165" class="label">Contributed to (last year):</text><text x="255" y="165" class="label">4</text></g>
+<g class="fade" style="animation-delay:0.63s"><g transform="translate(25,153)" fill="none" stroke="#c084fc" color="#c084fc" stroke-width="1.4" stroke-linecap="round"><path d="M3 13V3a1.5 1.5 0 0 1 1.5-1.5H13v10H4.5A1.5 1.5 0 0 0 3 13a1.5 1.5 0 0 0 1.5 1.5H13"/><path d="M6 11.5v3.5l1.25-.9 1.25.9v-3.5"/></g><text x="50" y="165" class="label">Contributed to (last year):</text><text x="255" y="165" class="label">5</text></g>
 <circle cx="360" cy="105" r="40" fill="none" stroke="#a855f7" stroke-opacity="0.2" stroke-width="6"/><circle cx="360" cy="105" r="40" fill="none" stroke="#a855f7" stroke-width="6" stroke-linecap="round" class="ring" transform="rotate(-90 360 105)"/><text x="360" y="105" class="level" text-anchor="middle" dominant-baseline="central">B-</text>
 </g>
 </svg>
