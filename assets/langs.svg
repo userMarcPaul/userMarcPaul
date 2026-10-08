@@ -22,16 +22,16 @@
 <text x="25" y="35" class="title">Most Used Languages</text>
 <clipPath id="bar"><rect x="25" y="55" width="330" height="8" rx="4"/></clipPath>
 <g clip-path="url(#bar)" class="grow">
-<rect x="25.00" y="55" width="300.67" height="8" fill="#a855f7"/>
-<rect x="325.17" y="55" width="15.14" height="8" fill="#f0abfc"/>
-<rect x="339.81" y="55" width="7.35" height="8" fill="#6d28d9"/>
-<rect x="346.66" y="55" width="4.25" height="8" fill="#e879f9"/>
-<rect x="350.41" y="55" width="3.06" height="8" fill="#818cf8"/>
+<rect x="25.00" y="55" width="300.46" height="8" fill="#a855f7"/>
+<rect x="324.96" y="55" width="15.13" height="8" fill="#f0abfc"/>
+<rect x="339.58" y="55" width="7.56" height="8" fill="#6d28d9"/>
+<rect x="346.64" y="55" width="4.28" height="8" fill="#e879f9"/>
+<rect x="350.41" y="55" width="3.05" height="8" fill="#818cf8"/>
 <rect x="352.97" y="55" width="2.53" height="8" fill="#ddd6fe"/>
 </g>
-<g class="fade" style="animation-delay:0.30s"><circle cx="30" cy="91" r="5" fill="#a855f7"/><text x="42" y="95" class="lang">Python 90.96%</text></g>
-<g class="fade" style="animation-delay:0.40s"><circle cx="200" cy="91" r="5" fill="#f0abfc"/><text x="212" y="95" class="lang">Dart 4.44%</text></g>
-<g class="fade" style="animation-delay:0.50s"><circle cx="30" cy="119" r="5" fill="#6d28d9"/><text x="42" y="123" class="lang">HTML 2.08%</text></g>
+<g class="fade" style="animation-delay:0.30s"><circle cx="30" cy="91" r="5" fill="#a855f7"/><text x="42" y="95" class="lang">Python 90.90%</text></g>
+<g class="fade" style="animation-delay:0.40s"><circle cx="200" cy="91" r="5" fill="#f0abfc"/><text x="212" y="95" class="lang">Dart 4.43%</text></g>
+<g class="fade" style="animation-delay:0.50s"><circle cx="30" cy="119" r="5" fill="#6d28d9"/><text x="42" y="123" class="lang">HTML 2.14%</text></g>
 <g class="fade" style="animation-delay:0.60s"><circle cx="200" cy="119" r="5" fill="#e879f9"/><text x="212" y="123" class="lang">JavaScript 1.14%</text></g>
 <g class="fade" style="animation-delay:0.70s"><circle cx="30" cy="147" r="5" fill="#818cf8"/><text x="42" y="151" class="lang">C++ 0.77%</text></g>
 <g class="fade" style="animation-delay:0.80s"><circle cx="200" cy="147" r="5" fill="#ddd6fe"/><text x="212" y="151" class="lang">CMake 0.62%</text></g>
