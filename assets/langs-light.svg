@@ -22,18 +22,18 @@
 <text x="25" y="35" class="title">Most Used Languages</text>
 <clipPath id="bar"><rect x="25" y="55" width="330" height="8" rx="4"/></clipPath>
 <g clip-path="url(#bar)" class="grow">
-<rect x="25.00" y="55" width="300.46" height="8" fill="#7c3aed"/>
-<rect x="324.96" y="55" width="15.13" height="8" fill="#c026d3"/>
-<rect x="339.58" y="55" width="7.56" height="8" fill="#4c1d95"/>
-<rect x="346.64" y="55" width="4.28" height="8" fill="#e879f9"/>
-<rect x="350.41" y="55" width="3.05" height="8" fill="#6366f1"/>
-<rect x="352.97" y="55" width="2.53" height="8" fill="#c4b5fd"/>
+<rect x="25.00" y="55" width="298.39" height="8" fill="#7c3aed"/>
+<rect x="322.89" y="55" width="15.02" height="8" fill="#c026d3"/>
+<rect x="337.41" y="55" width="7.64" height="8" fill="#4c1d95"/>
+<rect x="344.55" y="55" width="6.40" height="8" fill="#e879f9"/>
+<rect x="350.45" y="55" width="3.04" height="8" fill="#6366f1"/>
+<rect x="352.98" y="55" width="2.52" height="8" fill="#c4b5fd"/>
 </g>
-<g class="fade" style="animation-delay:0.30s"><circle cx="30" cy="91" r="5" fill="#7c3aed"/><text x="42" y="95" class="lang">Python 90.90%</text></g>
-<g class="fade" style="animation-delay:0.40s"><circle cx="200" cy="91" r="5" fill="#c026d3"/><text x="212" y="95" class="lang">Dart 4.43%</text></g>
-<g class="fade" style="animation-delay:0.50s"><circle cx="30" cy="119" r="5" fill="#4c1d95"/><text x="42" y="123" class="lang">HTML 2.14%</text></g>
-<g class="fade" style="animation-delay:0.60s"><circle cx="200" cy="119" r="5" fill="#e879f9"/><text x="212" y="123" class="lang">JavaScript 1.14%</text></g>
+<g class="fade" style="animation-delay:0.30s"><circle cx="30" cy="91" r="5" fill="#7c3aed"/><text x="42" y="95" class="lang">Python 90.27%</text></g>
+<g class="fade" style="animation-delay:0.40s"><circle cx="200" cy="91" r="5" fill="#c026d3"/><text x="212" y="95" class="lang">Dart 4.40%</text></g>
+<g class="fade" style="animation-delay:0.50s"><circle cx="30" cy="119" r="5" fill="#4c1d95"/><text x="42" y="123" class="lang">HTML 2.16%</text></g>
+<g class="fade" style="animation-delay:0.60s"><circle cx="200" cy="119" r="5" fill="#e879f9"/><text x="212" y="123" class="lang">JavaScript 1.79%</text></g>
 <g class="fade" style="animation-delay:0.70s"><circle cx="30" cy="147" r="5" fill="#6366f1"/><text x="42" y="151" class="lang">C++ 0.77%</text></g>
-<g class="fade" style="animation-delay:0.80s"><circle cx="200" cy="147" r="5" fill="#c4b5fd"/><text x="212" y="151" class="lang">CMake 0.62%</text></g>
+<g class="fade" style="animation-delay:0.80s"><circle cx="200" cy="147" r="5" fill="#c4b5fd"/><text x="212" y="151" class="lang">CMake 0.61%</text></g>
 </g>
 </svg>
