@@ -24,7 +24,7 @@
 
 
 <g class="fade" style="animation-delay:0.2s">
-  <text x="82.5" y="82" class="num" text-anchor="middle">356</text>
+  <text x="82.5" y="82" class="num" text-anchor="middle">359</text>
   <text x="82.5" y="122" class="lab" text-anchor="middle">Total Contributions</text>
   <text x="82.5" y="150" class="date" text-anchor="middle">Nov 8, 2024 - Present</text>
 </g>
@@ -32,9 +32,9 @@
 <circle cx="247.5" cy="72" r="40" fill="none" stroke="#a855f7" stroke-width="5" mask="url(#gap)" class="ringin"/>
 <g transform="translate(247.5,32)" fill="#f472b6" class="fade" style="animation-delay:0.6s"><path d="M0 -11 C1.5 -7 7 -4.5 7 1.5 A7 7 0 0 1 -7 1.5 C-7 -2.5 -4.5 -5 -3.5 -7.5 C-2.5 -5 -1.5 -4 -0.5 -3.5 C-0.5 -6.5 -1 -9 0 -11 Z" /><path d="M0 -1.5 C1 0.5 3 1.5 3 3.5 A3 3 0 0 1 -3 3.5 C-3 1.8 -1.5 0.8 0 -1.5 Z" fill="#0d1117"/></g>
 <g class="fade" style="animation-delay:0.4s">
-  <text x="247.5" y="82" class="num" text-anchor="middle">3</text>
+  <text x="247.5" y="82" class="num" text-anchor="middle">4</text>
   <text x="247.5" y="136" class="cur" text-anchor="middle">Current Streak</text>
-  <text x="247.5" y="160" class="date" text-anchor="middle">Oct 7 - Oct 9</text>
+  <text x="247.5" y="160" class="date" text-anchor="middle">Oct 7 - Oct 10</text>
 </g>
 <g class="fade" style="animation-delay:0.6s">
   <text x="412.5" y="82" class="num" text-anchor="middle">4</text>
